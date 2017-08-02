@@ -1,0 +1,29 @@
+﻿<Window x:Class="ChangeSystemDateTimeWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChangeSystemDateTimeWPF"
+        mc:Ignorable="d"
+        Title="Cambia data" Height="434.741" Width="494" ResizeMode="CanMinimize">
+    <Grid>
+        <Label x:Name="label" Content="Data che si desidera impostare:" HorizontalAlignment="Left" Margin="117.16,10,0,0" VerticalAlignment="Top" Width="286.028" FontSize="18.667"/>
+        <TextBox x:Name="txtYear" HorizontalAlignment="Left" Height="23" Margin="60.491,79.773,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="anno (2000)" TextChanged="txtYear_TextChanged"/>
+        <TextBox x:Name="txtMonth" HorizontalAlignment="Left" Height="23" Margin="185.491,79.773,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="mese (01)" TextChanged="txtMonth_TextChanged"/>
+        <TextBox x:Name="txtDay" Height="23" Margin="310.491,79.773,57.509,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="giorno (01)" TextChanged="txtDay_TextChanged"/>
+        <TextBox x:Name="txtHour" HorizontalAlignment="Left" Height="23" Margin="60.156,147.603,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="ore (10)" TextChanged="txtHour_TextChanged"/>
+        <TextBox x:Name="txtMinute" HorizontalAlignment="Left" Height="23" Margin="185.491,147.603,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" ToolTip="minuti (00)" TextChanged="txtMinute_TextChanged"/>
+        <TextBox x:Name="txtSecond" Height="23" Margin="310.492,147.49,57.508,0" TextWrapping="Wrap" VerticalAlignment="Top" ToolTip="secondi (00)" TextChanged="txtSecond_TextChanged"/>
+        <Button x:Name="btnSetOldDate" Content="Imposta data vecchia" HorizontalAlignment="Left" Margin="60.156,215.433,0,0" VerticalAlignment="Top" Width="263.269" Height="60.064" FontSize="18.667" FontWeight="Bold" Click="btnSetOldDate_Click"/>
+        <Button x:Name="btnSetNowDate" Content="Imposta data corrente automatica" Margin="60.491,311.497,57.508,0" VerticalAlignment="Top" Height="63.064" Click="btnSetNowDate_Click" FontSize="18.667" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Ore (10)" HorizontalAlignment="Left" Margin="60.491,112.773,0,0" VerticalAlignment="Top" FontSize="18.667"/>
+        <Label x:Name="label2" Content="Minuti (0)" HorizontalAlignment="Left" Margin="185.491,112.773,0,0" VerticalAlignment="Top" FontSize="18.667"/>
+        <Label x:Name="label3" Content="Secondi (0)" HorizontalAlignment="Right" Margin="0,112.66,75.748,0" VerticalAlignment="Top" FontSize="18.667"/>
+        <Label x:Name="label4" Content="Anno (2000)" HorizontalAlignment="Left" Margin="60.491,44.943,0,0" VerticalAlignment="Top" FontSize="18.667"/>
+        <Label x:Name="label5" Content="Mese (1)" HorizontalAlignment="Left" Margin="185.491,44.943,0,0" VerticalAlignment="Top" FontSize="18.667"/>
+        <Label x:Name="label6" Content="Giorno (1)" HorizontalAlignment="Right" Margin="0,44.943,84.812,0" VerticalAlignment="Top" FontSize="18.667"/>
+        <Separator HorizontalAlignment="Left" Height="31" Margin="10,280.497,0,0" VerticalAlignment="Top" Width="464"/>
+        <Button x:Name="btnDefault" Content="Default" HorizontalAlignment="Left" Margin="328.425,215.433,0,0" VerticalAlignment="Top" Width="90.969" Height="60.064" Click="btnDefault_Click" FontSize="18.667" FontWeight="Bold"/>
+        <Label x:Name="lblOutput" Content="" HorizontalAlignment="Left" Margin="60.156,175.603,0,0" VerticalAlignment="Top" FontSize="18.667" Width="370.336"/>
+    </Grid>
+</Window>
